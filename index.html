@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="description"
     content="MixedGaussianAvatar uses a mixed 2D-3D Gaussian Splatting method to reconstruct a realistically and geometrically accurate 3D head avatar mesh.">
-  <meta name="keywords" content="Mixed Gaussian Splatting, Head Avatar, 3D Reconstruction">
+  <meta name="keywords" content="Mixed Gaussian Splatting, Head Avatar, 2D Rendering, 3D Reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MixedGaussianAvatar</title>
 
@@ -429,7 +429,7 @@
           <div class="column has-text-centered">
             
             <h1 class="title is-1 publication-title">
-              MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting</h1>
+              MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussians</h1>
             <div class="is-size-3 publication-authors">
               <!-- <span class="author-block"> -->
                 Anonymous Author(s)
@@ -490,8 +490,9 @@
               triangular mesh of the FLAME model and connect additional 3D Gaussians to those 2D Gaussians where the rendering 
               quality of 2DGS is inadequate, creating a mixed 2D-3D Gaussian representation. These 2D-3D Gaussians can then 
               be animated using FLAME parameters. We further introduce a progressive training strategy that first trains the 
-              2D Gaussians and then fine-tunes the mixed 2D-3D Gaussians. We demonstrate the superiority of MixedGaussianAvatar 
-              through comprehensive experiments. The code will be released.
+              2D Gaussians and then fine-tunes the mixed 2D-3D Gaussians. We use a unified mixed Gaussian representation to integrate 
+              the two modalities of 2D image and 3D mesh. Furthermore, the comprehensive experiments demonstrate the superiority of 
+              MixedGaussianAvatar. The code will be released.
             </p>
           </div>
           
